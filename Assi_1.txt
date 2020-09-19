@@ -1,0 +1,289 @@
+Q.1:
+
+class Hello{
+	public static void main(String args[]){
+		System.out.println("Hello Java");
+	}
+}
+---------------------------------------------------
+Q.2:
+
+import java.util.Scanner;
+	class celsiusto
+	{
+		public static void main(String args[])
+		{
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter The temperature In Fahrenheit:");
+			int f = sc.nextInt();
+                        
+			float C= 5*(f-32)/9 ;
+			System.out.println("Temperature In Celsius is ="+C);
+		}
+	}
+
+
+---------------------------------------------------
+Q.3:
+
+import java.util.Scanner;
+class circlearea{
+		public static void main(String args[])
+		{	
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter radius of circle:");
+			int r = sc.nextInt();
+			double PI = 3.14;
+			double area = PI * r * r;
+			double c = 2 * PI * r;
+			System.out.println("Radius = "+area);
+			System.out.println("Circumference = "+c);
+		}
+}
+---------------------------------------------------
+Q.4:
+
+import java.util.Scanner;
+	class date
+	{
+		public static void main(String args[])
+		{
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter number of days:");
+			int n = sc.nextInt();
+
+			int y = n/365;
+			int y1 = n%365;
+			int m = y1/30;
+			int d = y1%30;
+                        
+			
+			System.out.println(y+" years "+ m + " months " +d+" day");
+		}
+	}
+
+
+---------------------------------------------------
+Q.5:
+
+import java.util.Scanner;
+class empsalary{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Basic Salay : ");
+		double Basic =  sc.nextDouble();
+		double HRA ;
+		double DA ;
+		if(Basic < 10000){
+			 HRA = 0.10*Basic;
+			 DA = 0.90*Basic;
+		}
+		else{
+			 HRA = 2000;
+			 DA = 0.98*Basic;
+		}
+		double GS = Basic + DA + HRA;
+
+		System.out.println("Gross Salay : "+GS);		
+	}
+
+}
+---------------------------------------------------
+Q.6:
+[A]
+
+class findvalue1 {
+	public static void main(String args[]){
+	int x = 100;
+	int y = x*x + 3*x - 7;
+	System.out.println("x2 + 3x - 7="+y);
+	}
+}
+   ___________________________________________
+[B]
+
+class findvalue1 {
+	public static void main(String args[]){
+	int x = 100;
+	int y = x++ + ++x ;
+	System.out.println("y = x++ + ++x ="+y);
+	}
+}
+	______________________________________
+[C]
+
+class findvalue2 {
+	public static void main(String args[]){
+	int x = 100;
+	int y = 100;
+	int z = x++ - --y - --x  +  x++ ;
+	System.out.println("x++ - --y - --x  +  x++ ="+z);
+	}
+}
+	_________________________________
+[D]
+
+class findvalue3 {
+	public static void main(String args[]){
+	boolean x = true;
+	boolean y = true;
+	boolean z = x && y || !(x || y);
+	System.out.println(" x && y || !(x || y)="+z);
+	}
+}
+
+
+---------------------------------------------------
+Q.7:
+
+import java.util.Scanner ;
+class gender {
+
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter The age and Sex");
+	int a = sc.nextInt();
+	char sex = sc.next().charAt(0);
+
+	if((a > 21 && sex=='M' ) ||(a > 18 && sex=='F')){
+	System.out.println("Eligible of Marriage");
+	}
+	else
+	{
+	System.out.println("Not Eligible of marriage");
+	}
+    }
+
+}
+---------------------------------------------------
+Q.8:
+
+import java.util.Scanner ;
+class greatestno {
+
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the numbers");
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	int c = sc.nextInt();
+
+	int s = (a > b && a > c)? a : (b > c && b > a)? b : c;
+System.out.println("gratest Number is: "+s);
+	}
+}
+
+---------------------------------------------------
+Q.9:
+
+import java.util.Scanner ;
+class leapyear {
+
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter The year");
+	int y = sc.nextInt();
+	
+	if(((y % 4==0) && (y % 100!=0 )) || (y % 400 == 0)){
+	System.out.println(y+"Leap Year");
+	}
+	else
+	System.out.println(y+"Not a Leap Year");
+	}
+}
+
+---------------------------------------------------
+Q.10:
+
+class primtive {
+	public static void main(String args[]){
+	byte x = 10;
+	byte y = 20;
+	byte z = (byte)(x + y);
+	System.out.println(z);
+	}
+}
+
+---------------------------------------------------
+Q.11:
+
+class Rollno {
+	public static void main(String args[]){
+	int R=100;
+	System.out.println("Roll NO="+R);
+	}
+}
+---------------------------------------------------
+Q.12:
+
+import java.util.Scanner;
+class simpleinterest{
+		public static void main(String args[])
+		{	
+			Scanner sc = new Scanner(System.in);
+			System.out.println("find Simple Interest Here:");
+			System.out.println("Enter Percentage");
+			float p = sc.nextInt();
+			System.out.println("Enter Rate");
+			float r = sc.nextInt();
+			System.out.println("Enter Time");
+			float t = sc.nextInt();
+			float SI = (p*r*t)/100;
+			System.out.println("Simple Interest Is = "+SI);
+		}
+}
+---------------------------------------------------
+Q.13:
+
+import java.util.Scanner;
+class subjectper{
+		public static void main(String args[])
+		{	
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter 5 Subject Mark:");
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			int c = sc.nextInt();
+			int d = sc.nextInt();
+			int e = sc.nextInt();
+			double totle = a+b+c+d+e;
+			double per = totle/5;
+			System.out.println("percentage marks = "+per);
+		}
+}
+---------------------------------------------------
+Q.14:
+
+import java.util.Scanner;
+
+class swapno{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		
+		int a = 10;
+		int b = 20;
+		
+		System.out.println("Before swapping a:"+a);
+		System.out.println("Before swapping b:"+b);
+
+		a=a+b;
+		b=a-b;
+		a=a-b;
+
+		System.out.println("Before swapping a:"+a);
+		System.out.println("Before swapping b:"+b);
+	}	
+}
+
+---------------------------------------------------
+Q.15:
+
+class welcome{
+	public static void main(String args[]){
+		String s1 = "Amol";
+		System.out.println("Welcome "+s1);
+		
+	}
+}
+
+===============================================================

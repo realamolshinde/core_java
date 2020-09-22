@@ -1,0 +1,250 @@
+Q.16
+
+import java.util.Scanner;
+class printtable{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a number : ");
+	int n = sc.nextInt();
+	System.out.println("Table of "+n+" is :");
+	for(int i=1;i<=10;i++){
+	System.out.println(n*i);		
+	}
+    }
+}
+----------------------------------------------------
+Q.17
+
+import java.util.Scanner;
+class reverse{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a number : ");
+	int n = sc.nextInt();
+	int rev=0;
+	int sd=0;
+
+	while(n!=0){
+	sd = n % 10;
+	rev= (rev*10)+sd;
+	n = n/10;
+	}
+	System.out.println(rev);		
+    }
+}
+---------------------------------------------------
+Q.18
+
+import java.util.Scanner;
+class primeno{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Number : ");
+		int n = sc.nextInt();
+		int count = 0;
+		for(int i=2; i<n; i++)
+		{
+			if(n%i==0)
+			count++;
+			
+		}
+		if(count==0)
+			System.out.println(n+" is prime Number");
+		else
+			System.out.println(n+" is not prime Number");
+	}
+}
+--------------------------------------------------
+Q.19
+
+import java.util.Scanner;
+class series{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Number : ");
+		int n = sc.nextInt();
+		int s=0;
+		for(int i=12; i<=n; i=i+10)
+		{
+		System.out.print(i);
+			if(i<n)
+			System.out.print("+");
+		s = s+i;
+		}
+		System.out.println("\n Sum of Series="+s);
+	}
+}
+-------------------------------------------------
+Q.20
+
+import java.util.Scanner;
+class Q20{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Range : ");
+		int n = sc.nextInt();
+		int count = 0;
+		System.out.print("Prime Numbers : ");
+		for(int i=2; i<n; i++)
+		{
+			count=0;
+			for(int j=2; j<i; j++)
+			{
+				if(i%j==0)
+					count++;
+			
+			}
+			if(count==0)
+				System.out.print(i+" ");
+			
+		}
+	}
+}
+
+
+
+-------------------------------------------------
+Q.21
+
+import java.util.Scanner;
+class arrayaverage{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 5 Number : ");
+		int a[] = new int[10];
+		float s=0;
+		float avg=0;
+	
+		for(int i=0; i<a.length; i++){
+			a[i]= sc.nextInt();
+		}
+		for(int a1: a ){
+			System.out.println(" "+a1);
+			s=s+a1;
+			avg=s/a.length;
+		}
+		System.out.println("average of Array ia= "+avg);
+	}
+}
+-----------------------------------------------------
+Q.22
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Q22{
+
+	public static void main(String... a){
+
+		Scanner sc=new Scanner(System.in);
+		
+		int arr[]=new int[10];
+		
+		System.out.println("Enter the Number ");
+		for(int i=0;i<10;i++)
+		{
+			int n=sc.nextInt();
+			arr[i]=n;
+				
+		}	
+		Arrays.sort(arr);
+		for(int j=9;j>=0;j--)
+		{
+			System.out.println(arr[j]);
+		}
+	}
+}
+
+------------------------------------------------
+Q.23
+
+import java.util.Scanner;
+class Q23{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int ar[] = new int[10];
+		
+		System.out.println("Enter elements : ");
+		for(int i=0; i<ar.length; i++)
+		{
+			
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Array in reverse order : ");
+		for(int i=(ar.length-1); i>=0 ; i--)
+		{
+			System.out.print(ar[i]+" ");
+		}
+		
+	}
+}
+------------------------------------------------
+Q.24
+
+import java.util.Scanner;
+class Q24{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int ar[] = new int[5];
+		
+		System.out.println("Enter elements : ");
+		for(int i=0; i<ar.length; i++)
+		{
+			
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Enter a Number to search : ");
+		int n = sc.nextInt();
+		int c=0;
+		for(int i=0; i<ar.length; i++)
+		{
+			if(ar[i]==n)
+				c++;
+	
+		}
+		if(c>0)
+			System.out.println(n + " is present in array");
+		else
+			System.out.println(n + " is not present in array");
+		
+	}
+}
+
+
+
+-------------------------------------------------
+Q.25
+
+import java.util.Scanner;
+class Q25{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int ar[] = new int[5];
+		
+		System.out.println("Enter elements : ");
+		for(int i=0; i<ar.length; i++)
+		{
+			
+			ar[i]=sc.nextInt();
+		}
+		
+		int sum1=0;
+		int sum2=0;
+		for(int i=0; i<ar.length; i++)
+		{
+			if(ar[i]%2==0){
+				sum1+=ar[i];
+			}
+			
+			if(ar[i]%2!=0){
+				sum2+=ar[i];
+			}		
+		}
+		
+		System.out.println("Sum of even numbers : "+sum1);
+		
+		System.out.println("Sum of odd numbers : "+sum2);
+		
+	}
+}
+
